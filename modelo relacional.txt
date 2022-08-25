@@ -1,0 +1,24 @@
+Pokemon(
+ ID int primary key unique,
+ NOME varchar(20),
+ ALTURA decimal,
+ PESO decimal,
+ FOTO varchar(10)
+)
+
+Status(
+ POKE_ID int chave estrangeira,
+ ATK int,
+ DEF int,
+ HP int,
+ SP.ATK int,
+ SP.DEF int,
+ SPEED int
+)
+
+Info(
+ POKE_ID int chave estrangeira,
+ REG varchar(20),
+ TIPO varchar(20),
+ JOGO varchar(20)
+)
